@@ -1,0 +1,70 @@
+// ruteo
+alumno@alumno-VirtualBox:~/Principal/Persona$ mkdir -p dato/{{personas/publicos,personas/privados}/buckup,{fiscales/afip,fiscales/arba}/pagos}
+alumno@alumno-VirtualBox:~/Principal/Persona$ tree
+.
+└── dato
+    ├── fiscales
+    │   ├── afip
+    │   │   └── pagos
+    │   └── arba
+    │       └── pagos
+    └── personas
+        ├── privados
+        │   └── buckup
+        └── publicos
+            └── buckup
+
+11 directories, 0 files
+
+
+// creo un archivo con el historial
+alumno@alumno-VirtualBox:~/Principal$ history > historial.utn
+alumno@alumno-VirtualBox:~/Principal$ ls
+app2  codigo  historial.utn  Persona  Uno
+
+// pwd
+alumno@alumno-VirtualBox:~$ pwd
+/home/alumno
+alumno@alumno-VirtualBox:~$ cd ..
+alumno@alumno-VirtualBox:/home$ pwd
+/home
+
+// listar
+alumno@alumno-VirtualBox:/etc$ ls ap*
+
+// touch - crea archivos o modifica la fecha de creación
+alumno@alumno-VirtualBox:~$ touch miArchivo
+alumno@alumno-VirtualBox:~$ ls
+Descargas   Escritorio  ls         Música      Público  Vídeos
+Documentos  Imágenes    miArchivo  Plantillas  q
+
+// Crear directorios desde otra carpeta
+alumno@alumno-VirtualBox:~/Principal$ mkdir ../Secundario
+alumno@alumno-VirtualBox:~/Principal$ tree
+.
+└── Persona
+
+1 directory, 0 files
+alumno@alumno-VirtualBox:~/Principal$ ls
+Persona
+alumno@alumno-VirtualBox:~/Principal$ cd ..
+alumno@alumno-VirtualBox:~$ tree
+.
+├── Descargas
+│   └── linux-commands-cheat-sheet-new.pdf
+├── Documentos
+├── Escritorio
+├── Imágenes
+├── ls
+├── miArchivo
+├── Música
+├── Plantillas
+├── Principal
+│   └── Persona
+├── Público
+├── q
+├── Secundario
+└── Vídeos
+
+
+
