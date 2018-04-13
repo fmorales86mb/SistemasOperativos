@@ -1,0 +1,6 @@
+//echo
+alumno@alumno-VirtualBox:~$ echo "hola"
+hola
+
+//creo archivo txt
+alumno@alumno-VirtualBox:~$ echo "hola mundo consola">saludar.txt
