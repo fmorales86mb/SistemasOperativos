@@ -1,0 +1,10 @@
+// creo archivo txt
+
+alumno@alumno-VirtualBox:~$ echo "borro lo anterior">saludar.txt
+
+// con doble >> usa otra linea, sino pisa
+alumno@alumno-VirtualBox:~$ echo "continuando con lo anterior" >>saludar.txt
+
+// ecriptar md5sum
+alumno@alumno-VirtualBox:~$ md5sum saludar.txt
+15b0ac8f8e49284785e41a63db3b2b37  saludar.txt
