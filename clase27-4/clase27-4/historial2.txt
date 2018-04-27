@@ -1,0 +1,139 @@
+    1  df -h
+    2  sudo su -
+    3  ifconfig
+    4  ping 8.8.8.8
+    5  sudo su
+    6  man ls
+    7  man du
+    8  man cp
+    9  man cat
+   10  man more
+   11  man less
+   12  man rm
+   13  man rmdir
+   14  man rm
+   15  man man
+   16  tty
+   17  ls >dev/pts/7
+   18  ls >/dev/pts/7
+   19  cat /etc/passwd > /dev/pts7
+   20  cat /etc/passwd > /dev/pts/7
+   21  pti
+   22  pty
+   23  tty
+   24  tree
+   25  mkdir .\clase27
+   26  tree
+   27  ls
+   28  man mkdir
+   29  mkdir clase27-4
+   30  ls
+   31  cd clase27-4/
+   32  cd..
+   33  cd ..
+   34  pwd
+   35  sudo
+   36  pwd
+   37  cd /
+   38  pwd
+   39  ls
+   40  ls -l
+   41  ls -r
+   42  ls -l-r
+   43  ls -r l
+   44  ls -r -l
+   45  ls -h
+   46  ls -t
+   47  ls -thal
+   48  tree
+   49  cd etc
+   50  pwd
+   51  ls
+   52  ls -l
+   53  cd home/alumno
+   54  cd /home/alumno
+   55  pwd
+   56  echo "hola" > saludar.txt
+   57  tree
+   58  ls -lath
+   59  cd ..
+   60  cd /boot
+   61  pwd
+   62  cd /var/lock
+   63  ls
+   64  ls - l
+   65  ls -l
+   66  cd ..
+   67  cd run
+   68  cd..
+   69  cd ..
+   70  ls -l
+   71  cd tmp
+   72  ls -l
+   73  cd ..
+   74  cd usr/bin/
+   75  ls -l
+   76  ls -lath
+   77  cd ..
+   78  du -bin
+   79  du /bin
+   80  du -b /bin
+   81  du -h
+   82  du -h /bin
+   83  cd /opt
+   84  ls -l
+   85  pwd
+   86  cd ..
+   87  cd /bin/
+   88  ls -lh
+   89  cd /home/
+   90  cd ..
+   91  cd /var/
+   92  ls -l
+   93  cd /home
+   94  tree
+   95  cp -a alumno/Descargas/index.png 
+   96  cp -a alumno/Descargas/index.png alumno/clase27-4/
+   97  tree
+   98  cp -a alumno/Descargas/index.png alumno/
+   99  tree
+  100  cp -a alumno/Descargas/index.png
+  101  cp -a alumno/Descargas/index.png /
+  102  cp -a alumno/Descargas/index.png /home
+  103  cp -a alumno/Descargas/index.png ./
+  104  tree
+  105  cp -a alumno/Descargas/index.png ../
+  106  tree
+  107  pwd
+  108  hitory
+  109  history
+  110  history > hisorial27.txt
+  111  history > alumno/hisorial27.txt
+  112  tree
+  113  pwd
+  114  cat /etc/passwd
+  115  cat alumno/clase27-4/clase.txt 
+  116  more /etc/passwd
+  117  less /etc/passwd
+  118  less alumno/clase27-4/clase.txt 
+  119  mkdir -p Sistemas/{{Contabilidad,Recursos-Humanos}/{Archivos,Usuarios}}/Contabilidad/{Usuarios/usu01,Recursos},Recursos-Humanos/Usuarios/usu02 
+  120  tree
+  121  mkdir -p alumno/Sistemas/{{Contabilidad,Recursos-Humanos}/{Archivos,Usuarios}}/Contabilidad/{Usuarios/usu01,Recursos},Recursos-Humanos/Usuarios/usu02 
+  122  tree
+  123  mkdir -p alumno/Sistemas/{Contabilidad/{Archivos,Usuarios},Recursos-Humanos/{Archivos,Usuarios}},/Contabilidad/{Usuarios/usu01,Recursos},Recursos-Humanos/Usuarios/usu02 
+  124  tree
+  125  mkdir -p alumno/Sistemas/{Contabilidad/{Archivos,Usuarios}Recursos-Humanos/{Archivos,Usuarios}}/Contabilidad/{Usuarios/usu01,Recursos},Recursos-Humanos/Usuarios/usu02 
+  126  tree
+  127  mkdir -p alumno/Sistemas/{Contabilidad,Recursos-Humanos}/{Archivos,Usuarios}
+  128  tree
+  129  mkdir -p alumno/Sistemas/Contabilidad/{Recursos,Usuarios/usu01}
+  130  tree
+  131  mkdir -p alumno/Sistemas/Recursos-Humanos/Usuarios/usu02
+  132  tree
+  133  cd alumno/S
+  134  cd alumno/Sistemas/
+  135  tree
+  136  touch Contabilidad/Recursos/recu_conta.txt
+  137  tree
+  138  history
+  139  history > historial2.txt
