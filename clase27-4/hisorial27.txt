@@ -1,0 +1,93 @@
+    1  df -h
+    2  sudo su -
+    3  ifconfig
+    4  ping 8.8.8.8
+    5  sudo su
+    6  tree
+    7  mkdir .\clase27
+    8  tree
+    9  ls
+   10  man mkdir
+   11  mkdir clase27-4
+   12  ls
+   13  cd clase27-4/
+   14  cd..
+   15  cd ..
+   16  pwd
+   17  sudo
+   18  pwd
+   19  cd /
+   20  pwd
+   21  ls
+   22  ls -l
+   23  ls -r
+   24  ls -l-r
+   25  ls -r l
+   26  ls -r -l
+   27  ls -h
+   28  ls -t
+   29  ls -thal
+   30  tree
+   31  cd etc
+   32  pwd
+   33  ls
+   34  ls -l
+   35  cd home/alumno
+   36  cd /home/alumno
+   37  pwd
+   38  echo "hola" > saludar.txt
+   39  tree
+   40  ls -lath
+   41  cd ..
+   42  cd /boot
+   43  pwd
+   44  cd /var/lock
+   45  ls
+   46  ls - l
+   47  ls -l
+   48  cd ..
+   49  cd run
+   50  cd..
+   51  cd ..
+   52  ls -l
+   53  cd tmp
+   54  ls -l
+   55  cd ..
+   56  cd usr/bin/
+   57  ls -l
+   58  ls -lath
+   59  cd ..
+   60  du -bin
+   61  du /bin
+   62  du -b /bin
+   63  du -h
+   64  du -h /bin
+   65  cd /opt
+   66  ls -l
+   67  pwd
+   68  cd ..
+   69  cd /bin/
+   70  ls -lh
+   71  cd /home/
+   72  cd ..
+   73  cd /var/
+   74  ls -l
+   75  cd /home
+   76  tree
+   77  cp -a alumno/Descargas/index.png 
+   78  cp -a alumno/Descargas/index.png alumno/clase27-4/
+   79  tree
+   80  cp -a alumno/Descargas/index.png alumno/
+   81  tree
+   82  cp -a alumno/Descargas/index.png
+   83  cp -a alumno/Descargas/index.png /
+   84  cp -a alumno/Descargas/index.png /home
+   85  cp -a alumno/Descargas/index.png ./
+   86  tree
+   87  cp -a alumno/Descargas/index.png ../
+   88  tree
+   89  pwd
+   90  hitory
+   91  history
+   92  history > hisorial27.txt
+   93  history > alumno/hisorial27.txt
