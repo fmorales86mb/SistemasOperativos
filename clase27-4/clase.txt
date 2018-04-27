@@ -1,0 +1,101 @@
+SUBDIRECTORIOS (ver apuntes
+
+*fs: file system
+
+*sudo y cd / para ir al root
+ls -l y sus opciones, t, h, r..
+
+*fhs - estandar El estándar de jerarquía del sistema de archivos
+En UNIX y sistemas similares como BSD, GNU/Linux, 
+todos los archivos y directorios aparecen bajo el directorio raíz, /, 
+aun cuando se encuentren en distintos dispositivos físicos.
+
+win - se separan los discos y de ahi los dir
+linux - todo sale del root / Los discos tambien
+
+*subdirectorios no compartidos
+/etc: guarda los archivos de configuración. creados por root. no son compartidos,
+/boot: no compartido, se puede agrear algo para bootear.
+/var/lock: bloqueo de.. 
+/var/run:..
+
+en var en gral se guardan bases de datos, logs.. algunos se pueden borrar para 
+limpiar el disco rigido.
+http://www.tldp.org/pub/Linux/docs/ldp-archived/system-admin-guide/translations/es/html/ch04s06.html
+
+/var/tmp:
+
+*Subdirectorios compartidos
+/usr/bin: es el que más ocupa. tiene todos los ejecutables.
+/usr/opt: 
+
+*ver tamaño du /directorio
+du -h (pasa a megas) /directorio (h human)
+
+estaticos y dinamicos.
+
+estaticos 
+/bin: archivos binarios escenciales del sistema.
+/boot
+/sbin
+
+dinamicos
+/home
+/var/spool
+
+*Ingresar disco rigido.
+-montar un disco
+
+*Arhcivos
+todos son como archivos (arhicvos, carpetas, etc.)
+cambian los atributos y permisos.
+
+instrucción curl (copy url)
+tar (descomprime)
+
+*descargamos imagen y la copiamos a otro directorio
+cp -a [dir de archivo a copiar] [dir de lugar a pegar]
+alumno@alumno-VirtualBox:/home$ cp -a alumno/Descargas/index.png alumno/clase27-4/
+alumno@alumno-VirtualBox:/home$ tree
+.
+└── alumno
+    ├── clase27-4
+    │   ├── clase.txt
+    │   └── index.png
+    ├── Descargas
+    │   └── index.png
+    ├── Documentos
+    ├── Escritorio
+    ├── Imágenes
+    ├── Música
+    ├── Plantillas
+    ├── Público
+    ├── saludar.txt
+    └── Vídeos
+
+*archivos
+directorios (carpetas)
+comunes (txt, etc)
+especiales (ej, un disco rigido, cuando lo saco el device desaparece el archivo)
+
+ruta relativa alumno/bla   ../../bla relativa de donde yo estoy
+ruta no relativa (absoluto) /bla
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
