@@ -11,13 +11,16 @@ Puedo escribir en otra consola sabiendo donde está el archivo de la consola.
 
 touch- cambia la fecha de un archivo o, si no existe, lo crea.
 
-cp- copy (Ver rutas relativas o absolutas)
+cp -copia (Ver rutas relativas o absolutas)
+cp -r para copiar directorios y los archivos que contengan
 
 cat/less/more - contenido de un archivo. Cambia la interacción con el usuario. Ver
 
-pipe-
+pipe- tubería. Tomo los datos de una función y lo paso a otro con pipe 
+assi-179 "|"
 
-&&-
+&&- ejecuta un segundo comando si el primero corrió bien
+& ejecuta uno y luego el otro
 
 mv-
 
@@ -34,3 +37,19 @@ rmdir- borra directorios vacios
 tree- arbol de directorios y archivos.
 
 passwd -hay varios, el delos passwords está en /etc/passwd
+
+Manual de comandos
+https://docs.oracle.com/cd/E19620-01/805-7644/index.html
+
+alumno@alumno-VirtualBox:/$ ls | less // lista 
+
+alumno@alumno-VirtualBox:/$ ls | head -3 // los primeros 3
+bin
+boot
+cdrom
+
+alumno@alumno-VirtualBox:/$ ls | head -3 | tail -1 // lista, toma primeros tres y de esos el ultimo.
+cdrom
+
+
+
