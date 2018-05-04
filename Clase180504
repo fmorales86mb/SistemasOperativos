@@ -1,0 +1,36 @@
+*COMANDOS
+
+ls --help
+man
+info
+which - devuelve la ruta del programa.
+whatis - definicion (cuántos manuales hay)
+
+< > >> redireccionar información. Si direcciono a un archivo, lo crea. 
+Puedo escribir en otra consola sabiendo donde está el archivo de la consola.
+
+touch- cambia la fecha de un archivo o, si no existe, lo crea.
+
+cp- copy (Ver rutas relativas o absolutas)
+
+cat/less/more - contenido de un archivo. Cambia la interacción con el usuario. Ver
+
+pipe-
+
+&&-
+
+mv-
+
+grep-
+
+*RUTEO
+
+cd / -lleva al root.
+cd -lleva a mi home (home/usuario)
+mkdir -p -Crea directorios y subdirectorios.
+rm- borra archivos
+rm -r borra directorios y su contenido o subdirectorios.
+rmdir- borra directorios vacios
+tree- arbol de directorios y archivos.
+
+passwd -hay varios, el delos passwords está en /etc/passwd
