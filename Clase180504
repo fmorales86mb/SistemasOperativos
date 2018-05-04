@@ -16,11 +16,13 @@ cp -r para copiar directorios y los archivos que contengan
 
 cat/less/more - contenido de un archivo. Cambia la interacción con el usuario. Ver
 
-pipe- tubería. Tomo los datos de una función y lo paso a otro con pipe 
-assi-179 "|"
 
 &&- ejecuta un segundo comando si el primero corrió bien
 & ejecuta uno y luego el otro
+alumno@alumno-VirtualBox:/$ ls media/ && echo "hola"
+alumno  sf_MoralesFederico
+hola
+
 
 mv-
 
@@ -41,15 +43,116 @@ passwd -hay varios, el delos passwords está en /etc/passwd
 Manual de comandos
 https://docs.oracle.com/cd/E19620-01/805-7644/index.html
 
-alumno@alumno-VirtualBox:/$ ls | less // lista 
+*pipe- tubería. Tomo los datos de una función y lo paso a otro con pipe 
+assi-179 "|"
 
-alumno@alumno-VirtualBox:/$ ls | head -3 // los primeros 3
+// lista
+alumno@alumno-VirtualBox:/$ ls | less  
+
+// los primeros 3
+alumno@alumno-VirtualBox:/$ ls | head -3 
 bin
 boot
 cdrom
 
-alumno@alumno-VirtualBox:/$ ls | head -3 | tail -1 // lista, toma primeros tres y de esos el ultimo.
+// lista, toma primeros tres y de esos el ultimo.
+alumno@alumno-VirtualBox:/$ ls | head -3 | tail -1 
 cdrom
 
 
+*REPOSITORIOS
+Son la fuente de actualización del software. Hay publicos y privados. Propios 
+y ajenos, repetidos o no.
+
+*PAQUETES. 
+los paquetes traen programas, archivos, imágenes, 
+software en gral, que traigo a mi pc.
+
+estable, testing, inestable (tres tipos de paquetes.)
+estable: una nueva versión
+testing: igual o mas perfomans, es la proxima versión y se distribuye para que 
+los usuarios testeen.
+inestable: un software que no está testeado.
+
+actualización: 
+apt (manejo de paquetes avanzada)
+
+// direccion de donde bajaron los paquetes
+// muestra la fuente de los paquetes. direcciones web, el apt entra ahí 
+// y baja los paquetes
+alumno@alumno-VirtualBox:/$ ls -l /etc/apt/
+total 20
+drwxr-xr-x 2 root root 4096 nov 30  2016 apt.conf.d
+drwxr-xr-x 2 root root 4096 oct  4  2016 preferences.d
+-rw-rw-r-- 1 root root 2942 nov 30  2016 sources.list
+drwxr-xr-x 2 root root 4096 oct  4  2016 sources.list.d
+drwxr-xr-x 2 root root 4096 oct 12  2016 trusted.gpg.d
+alumno@alumno-VirtualBox:/$ cat etc/apt/sources.list
+
+/var (estudiar que trae las carpetas.)
+
+// paquetes bajados
+alumno@alumno-VirtualBox:/$ ls -l var/lib/apt/
+total 36
+-rw-rw-r-- 1 root root   205 nov 30  2016 cdroms.list
+-rw-r--r-- 1 root root  5236 abr  1  2017 extended_states
+drwxr-xr-x 3 root root 16384 dic 14  2016 lists
+drwxr-xr-x 3 root root  4096 oct 12  2016 mirrors
+drwxr-xr-x 2 root root  4096 ene 10  2017 periodic
+alumno@alumno-VirtualBox:/$ ls -l var/lib/apt/lists/
+
+//chequeo, verifica que esté todo bien
+alumno@alumno-VirtualBox:/$ sudo apt-get check 
+[sudo] password for alumno: 
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias       
+Leyendo la información de estado... Hecho
+
+// actualizo la lista y paquetes. sincronizo lista con paquetes. baja paquetes??
+alumno@alumno-VirtualBox:/$ sudo apt-get update 
+
+// bajo los paquetes. actualizo o instalo los paquetes??
+alumno@alumno-VirtualBox:/$ sudo apt-get upgrade 
+// para actualizar la distro es dist upgrade
+
+//libero espacio / borra paquetes y ejecutables.
+alumno@alumno-VirtualBox:/$ sudo apt-get clean 
+
+// borra los paquetes desactualizados.
+alumno@alumno-VirtualBox:/$ sudo apt-get autoclean 
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias       
+Leyendo la información de estado... Hecho
+
+// acá están los archivos, los ejecutables?? lo que se puede llevar a otra pc 
+// y hacer upgrade
+alumno@alumno-VirtualBox:/$ ls var/cache/apt/archives/
+lock  partial
+
+// borra programas que traigo como dependencia de otro programa. (ver)
+apt-get autoremove
+// el clean borra el programa.
+
+//apt-cache search [paquete] busca el paquete q le pongo y lo busca en 
+la lista de paquetes
+
+// instala el paquete que le decimos
+apt-get install [paquete] 
+
+// si necesita otras dependencias -f
+apt-get -f install [paquete]
+
+// apt-get --reinstall [paquete]d
+
+//paquetes instalados (lista)
+dpkg -l
+
+// desisnstala (remove)
+alumno@alumno-VirtualBox:/$ sudo dpkg -r mc
+
+//veo a que paquete pertenece tal archivo
+alumno@alumno-VirtualBox:/$ which man 
+/usr/bin/man
+alumno@alumno-VirtualBox:/$ sudo dpkg -S /usr/bin/man
+man-db: /usr/bin/man //el paquete es man-db
 
