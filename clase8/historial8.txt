@@ -1,0 +1,130 @@
+    1  df -h
+    2  sudo su -
+    3  ifconfig
+    4  ping 8.8.8.8
+    5  sudo su
+    6  more ../../../etc/passwd
+    7  cat ../../../etc/passwd
+    8  sudo su-
+    9  pwd
+   10  sudosu-
+   11  sudo su
+   12  pwd
+   13  sudo su
+   14  pwd
+   15  useradd -s /bin/bash -m -c "usuario de prueba" upureba
+   16  sudo su
+   17  man sudo
+   18  sudo su
+   19  echo "hola" > saludar.txt
+   20  ls
+   21  cat saludar.txt 
+   22  ls -la
+   23  ls -la grep saludar.txt 
+   24  echo "echo 'hola a todos'" > saludar.txt
+   25  cat saludar.txt 
+   26  chmode 764 saludar.txt 
+   27  chmod 764 saludar.txt 
+   28  ./saludar.txt 
+   29  login uprueba
+   30  sudo su
+   31  sudo chown uprueba saludar.txt 
+   32  ls -la | grep saludar.txt 
+   33  history > Escritorio/Clase8/historial8.txt
+   34  id upureba
+   35  sudo id uprueba
+   36  sudo id alumno
+   37  sudo su
+   38  sudo useradd -s /bin/bash -m -c "usuario maestro" 
+   39* 
+   40  sudo useradd -s /bin/bash -m -c "usuario maestro" master 
+   41  sudo id master 
+   42  sudo useradd -s /bin/bash -m -c "usuario primero" -g "master" 
+   43  sudo useradd -s /bin/bash -m -c "usuario primero" -g "master" primero
+   44  sudo id primero 
+   45  clear
+   46  sudo useradd -s /bin/bash -m -c "usuario segundo" -g "master" -G "alumno" segundo
+   47  sudo id segundo 
+   48  cat ../../etc/group
+   49  history > Escritorio/Clase8/historial8.txt
+   50  cat ../../etc/gshadow
+   51  sudo cat ../../etc/gshadow
+   52  clear
+   53  pwd
+   54  cd ..
+   55  ls
+   56  cd ..
+   57  ls
+   58  cd home/
+   59  ls
+   60  echo "echo 'hola'" > saludar
+   61  sudo echo "echo 'hola'" > saludar
+   62* 
+   63  sudo echo "echo 'hola'" > salud.txt
+   64  sudo echo "echo 'hola'" > alumno/saludo
+   65  echo "echo 'hola'" > alumno/saludo
+   66  ls -la | grep saludo
+   67  ls
+   68  ls -la | grep "saludo"
+   69  ls -la | grep salud
+   70  cd alumno/
+   71  ls -la | grep salud
+   72  clear
+   73  ls -la | grep salud
+   74  sudo chown master master saludo
+   75  sudo chown master saludo
+   76  ls -la | grep salud
+   77  history > Escritorio/Clase8/historial8.txt
+   78  clear
+   79  pwd
+   80  cd /
+   81  sudo useradd -s /bin/bash -m -c "usuario contable" contable
+   82  sudo useradd -s /bin/bash -m -c "usuario recursos" recursos
+   83  sudo id contable 
+   84  sudo id recursos 
+   85  sudo useradd -s /bin/bash -m -c "usuario cont" -g "contable" cont 
+   86  sudo id cont
+   87  sudo useradd -s /bin/bash -m -c "usuario recu" -g "recursos" recu
+   88  sudo id recu
+   89  sudo useradd -s /bin/bash -m -c "usuario pablo" -G "recursos" pablo
+   90  sudo id pablo
+   91  sudo useradd -s /bin/bash -m -c "usuario juan" -G "contable" juan
+   92  sudo id jua
+   93  sudo id juan 
+   94  sudo useradd -s /bin/bash -m -c "usuario juan" -G "recursos" juan
+   95  sudo useradd -G "recursos" juan
+   96  sudo useradd 
+   97  sudo usermod -G "recursos" juan
+   98  sudo id juan 
+   99  sudo usermod -a "contable" juan
+  100  sudo id juan 
+  101  sudo usermod -a -G "contable" juan
+  102  sudo id juan 
+  103  pwd
+  104  mkdir recursos
+  105  sudo mkdir recursos
+  106  cd
+  107  ls -la
+  108  cd .config/
+  109  ls
+  110  ls -la
+  111  cat user-dirs.dirs 
+  112  chown recu:pablo ../../../../recursos
+  113  sudo chown recu:pablo ../../../../recursos
+  114  cd /
+  115  ls -ls | grep recursos
+  116  cd home/alumno/.config/
+  117  ls
+  118  cd /
+  119  cd usr/
+  120  ls
+  121  ls -la | grep aplications
+  122  cd /
+  123  ls -la | grep aplications
+  124  cd usr/share/
+  125  ls
+  126  cd /applications
+  127  cd application
+  128  cd applications
+  129  ls
+  130  history > ../../../home/alumno/Escritorio/Clase8/historial8.txt 
