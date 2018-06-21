@@ -1,0 +1,33 @@
+Instalar xampp
+
+- Xampp incluye http, php y mysql (el apache también?)
+- Se descarga el instalador desde apachefrends.org (.run)
+- se cambian los permisos del archivo para poder ejecutarlo.
+
+	fede@fede-VirtualBox:~/Descargas$ ls -la | grep xampp-linux-x64-7.2.6-0-installer.run 
+	-rw-rw-r--  1 fede fede 141140212 jun 21 12:57 xampp-linux-x64-7.2.6-0-installer.run
+	
+	fede@fede-VirtualBox:~/Descargas$ chmod 764 xampp-linux-x64-7.2.6-0-installer.run 
+
+	fede@fede-VirtualBox:~/Descargas$ ls -la | grep xampp-linux-x64-7.2.6-0-installer.run 
+	-rwxrw-r--  1 fede fede 141140212 jun 21 12:57 xampp-linux-x64-7.2.6-0-installer.run
+
+- Se ejecuta el instalador de xampp (el dir por default es /opt/lampp)
+
+	fede@fede-VirtualBox:~/Descargas$ sudo ./xampp-linux-x64-7.2.6-0-installer.run 
+
+- Al terminar de instalar se pone "get started"
+- Se abre el navegador. Ir a "http://localhost". Debe aparecer la página de xampp.
+
+Instalar OwnCloud
+
+- Descargar Owncloud:
+	
+	wget https://download.owncloud.org/community/owncloud-10.0.2.zip
+
+- Descomprimir
+	
+	unzip owncloud-10.0.2.zip 
+
+- 
+	
