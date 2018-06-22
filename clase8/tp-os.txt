@@ -16,7 +16,10 @@ Instalar xampp
 
 	fede@fede-VirtualBox:~/Descargas$ sudo ./xampp-linux-x64-7.2.6-0-installer.run 
 
-- Al terminar de instalar se pone "get started"
+- Al terminar de instalar se pone "get started" o por comando:
+
+	sudo /opt/lampp/lampp start
+
 - Se abre el navegador. Ir a "http://localhost". Debe aparecer la página de xampp.
 
 Instalar OwnCloud
@@ -29,5 +32,16 @@ Instalar OwnCloud
 	
 	unzip owncloud-10.0.2.zip 
 
-- 
+- Copiar directorio descomprimido a /opt/lampp/htdocs (donde se alojan las páginas web).
+
+	sudo cp -r owncloud/ /opt/lampp/htdocs/
+
+-Configurar el virtual host. 
+Para esto se crea un httpd-owncloud.cof dentro del directorio que indica el tp con el script (éste se puede sacar del Manual installation on linux de doc.owncloud.org. Luego se copia el archivo en el directorio.
+
+	sudo cp httpd-owncloud.conf /opt/lampp/etc/extra/
+
+- Permiso de escritura el dir /opt/lampp
+
+	
 	
