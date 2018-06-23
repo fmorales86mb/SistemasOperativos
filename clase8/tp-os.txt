@@ -43,5 +43,14 @@ Para esto se crea un httpd-owncloud.cof dentro del directorio que indica el tp c
 
 - Permiso de escritura el dir /opt/lampp
 
+	fede@fede-VirtualBox:~$ ls -la /opt/ | grep lampp
+	drwxr-xr-x 30 root root 4096 jun 23 12:18 lampp
+	
+	fede@fede-VirtualBox:~$ sudo chmod 775 /opt/lampp/
+	
+	fede@fede-VirtualBox:~$ ls -la /opt/ | grep lampp
+	drwxrwxr-x 30 root root 4096 jun 23 12:18 lampp
+
+	
 	
 	
