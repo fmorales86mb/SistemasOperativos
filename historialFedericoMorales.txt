@@ -1,0 +1,55 @@
+    1  df -h
+    2  sudo su -
+    3  ifconfig
+    4  ping 8.8.8.8
+    5  sudo su
+    6  sudo useradd -s /bin/bash -m
+    7  sudo useradd -s /bin/bash -m rrhh
+    8  id rrhh
+    9  passwd rrhh
+   10  sudo passwd rrhh
+   11  sudo useradd -s /bin/bash -m -p contable
+   12  id contable
+   13  sudo useradd -s /bin/bash -m contable
+   14  sudo passwd contable 
+   15  sudo useradd -s /bin/bash -m dev
+   16  sudo passwd dev
+   17  id dev
+   18  id conta
+   19  id contable
+   20  man grpman
+   21  man grpadd
+   22  man grupadd
+   23  sudo useradd recursos
+   24  sudo useradd developer
+   25  man chgrp
+   26  id rrhh
+   27  sudo usermod -g recursos rrhh
+   28  id rrhh
+   29  sudo usermod -g rrhh rrhh
+   30  id rrhh
+   31  usermod -a -G recursos rrhh
+   32  sudo usermod -a -G recursos rrhh
+   33  id rrhh
+   34  sudo usermod -a -G developer,recursos dev
+   35  id dev
+   36  mkdir /Recursos
+   37  sudo mkdir Recursos
+   38  sudo mkdir /Recursos
+   39  sudo mkdir /Contable
+   40  ls -la / | grep Recursos
+   41  sudo chown rrhh:recursos /Recursos/
+   42  ls -la / | grep Recursos
+   43  ls -la / | grep Contable
+   44  sudo chown contable:contable /Contable/
+   45  ls -la / | grep Contable
+   46  sudo chmod 770 /Recursos/ 
+   47  ls -la / | grep Recursos
+   48  sudo chmod 750 /Contable/ 
+   49  ls -la / | grep Contable
+   50  id dev
+   51  clear
+   52  id dev
+   53  ls -la / | grep Contable
+   54  ls -la / | grep Recursos
+   55  history > historialFedericoMorales.txt
