@@ -1,7 +1,7 @@
 Instalar xampp
 
-- Xampp incluye http, php y mysql (el apache también?)
-- Se descarga el instalador desde apachefrends.org (.run)
+- Xampp incluye Apache (servidor http), php (ver version compatible) y mysql
+- Se descarga el instalador desde apachefrends.org (un .run)
 - se cambian los permisos del archivo para poder ejecutarlo.
 
 	fede@fede-VirtualBox:~/Descargas$ ls -la | grep xampp-linux-x64-7.2.6-0-installer.run 
@@ -41,7 +41,7 @@ Para esto se crea un httpd-owncloud.cof dentro del directorio que indica el tp c
 
 	sudo cp httpd-owncloud.conf /opt/lampp/etc/extra/
 
-- Permiso de escritura el dir /opt/lampp
+- Permiso de escritura el dir /opt/lampp recursivamente.
 
 	fede@fede-VirtualBox:~$ ls -la /opt/ | grep lampp
 	drwxr-xr-x 30 root root 4096 jun 23 12:18 lampp
@@ -50,6 +50,9 @@ Para esto se crea un httpd-owncloud.cof dentro del directorio que indica el tp c
 	
 	fede@fede-VirtualBox:~$ ls -la /opt/ | grep lampp
 	drwxrwxr-x 30 root root 4096 jun 23 12:18 lampp
+	
+	sudo chmod -R 664 /opt/lampp/
+
 
 	
 	
